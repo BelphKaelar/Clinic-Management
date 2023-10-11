@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +64,25 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Doctors.resx">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homes.resx">
       <DependentUpon>Homes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
