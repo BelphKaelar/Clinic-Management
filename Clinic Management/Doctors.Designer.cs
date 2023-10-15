@@ -29,19 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doctors));
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Edit_Btn = new System.Windows.Forms.Button();
+            this.Add_Btn = new System.Windows.Forms.Button();
+            this.Del_Btn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.DocAdd_TBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DocPhone_TBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DocName_TBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -55,9 +54,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DocBirth_DOB = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.DocSpec_CBox = new System.Windows.Forms.ComboBox();
+            this.docGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DocGen1 = new System.Windows.Forms.RadioButton();
+            this.DocGen2 = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.DocExp_TBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -67,41 +72,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.docGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button3
+            // Edit_Btn
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(670, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 44);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Edit_Btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Edit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edit_Btn.Location = new System.Drawing.Point(619, 324);
+            this.Edit_Btn.Name = "Edit_Btn";
+            this.Edit_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Edit_Btn.TabIndex = 25;
+            this.Edit_Btn.Text = "Edit";
+            this.Edit_Btn.UseVisualStyleBackColor = false;
+            this.Edit_Btn.Click += new System.EventHandler(this.Edit_Btn_Click);
             // 
-            // button2
+            // Add_Btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(417, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 44);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Add_Btn.BackColor = System.Drawing.Color.Black;
+            this.Add_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Add_Btn.Location = new System.Drawing.Point(366, 324);
+            this.Add_Btn.Name = "Add_Btn";
+            this.Add_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Add_Btn.TabIndex = 24;
+            this.Add_Btn.Text = "Add";
+            this.Add_Btn.UseVisualStyleBackColor = false;
+            this.Add_Btn.Click += new System.EventHandler(this.Add_Btn_Click);
             // 
-            // button1
+            // Del_Btn
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(543, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Del_Btn.BackColor = System.Drawing.Color.IndianRed;
+            this.Del_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Del_Btn.Location = new System.Drawing.Point(492, 324);
+            this.Del_Btn.Name = "Del_Btn";
+            this.Del_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Del_Btn.TabIndex = 23;
+            this.Del_Btn.Text = "Delete";
+            this.Del_Btn.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -133,13 +142,13 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Address:";
             // 
-            // textBox3
+            // DocAdd_TBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(219, 232);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(307, 68);
-            this.textBox3.TabIndex = 15;
+            this.DocAdd_TBox.Location = new System.Drawing.Point(219, 232);
+            this.DocAdd_TBox.Multiline = true;
+            this.DocAdd_TBox.Name = "DocAdd_TBox";
+            this.DocAdd_TBox.Size = new System.Drawing.Size(307, 68);
+            this.DocAdd_TBox.TabIndex = 15;
             // 
             // label9
             // 
@@ -152,12 +161,12 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Contact number:";
             // 
-            // textBox1
+            // DocPhone_TBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 12;
+            this.DocPhone_TBox.Location = new System.Drawing.Point(219, 185);
+            this.DocPhone_TBox.Name = "DocPhone_TBox";
+            this.DocPhone_TBox.Size = new System.Drawing.Size(200, 20);
+            this.DocPhone_TBox.TabIndex = 12;
             // 
             // label7
             // 
@@ -170,19 +179,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Date of Birth:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(483, 134);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(71, 25);
-            this.comboBox1.TabIndex = 10;
-            this.comboBox1.Text = "Gender";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -194,12 +190,12 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Doctor name:";
             // 
-            // textBox2
+            // DocName_TBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(219, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 20);
-            this.textBox2.TabIndex = 8;
+            this.DocName_TBox.Location = new System.Drawing.Point(219, 137);
+            this.DocName_TBox.Name = "DocName_TBox";
+            this.DocName_TBox.Size = new System.Drawing.Size(258, 20);
+            this.DocName_TBox.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -210,6 +206,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label5
             // 
@@ -237,16 +234,16 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(69, 459);
+            this.label4.Location = new System.Drawing.Point(57, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 28);
+            this.label4.Size = new System.Drawing.Size(137, 28);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Receptionist";
+            this.label4.Text = "Appointment";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(12, 442);
+            this.pictureBox6.Location = new System.Drawing.Point(0, 312);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(51, 45);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,7 +255,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(69, 364);
+            this.label3.Location = new System.Drawing.Point(57, 278);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 28);
             this.label3.TabIndex = 14;
@@ -267,7 +264,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 347);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 261);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(51, 45);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -277,7 +274,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 249);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 210);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(51, 45);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +286,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(69, 266);
+            this.label1.Location = new System.Drawing.Point(57, 227);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 28);
             this.label1.TabIndex = 10;
@@ -298,7 +295,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 159);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 159);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(51, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -310,7 +307,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(66, 176);
+            this.label2.Location = new System.Drawing.Point(57, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 28);
             this.label2.TabIndex = 8;
@@ -346,31 +343,34 @@
             this.panel1.Size = new System.Drawing.Size(200, 761);
             this.panel1.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // DocBirth_DOB
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 185);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.DocBirth_DOB.Location = new System.Drawing.Point(425, 185);
+            this.DocBirth_DOB.Name = "DocBirth_DOB";
+            this.DocBirth_DOB.Size = new System.Drawing.Size(129, 20);
+            this.DocBirth_DOB.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.DocExp_TBox);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.docGridView1);
+            this.panel2.Controls.Add(this.DocSpec_CBox);
+            this.panel2.Controls.Add(this.Edit_Btn);
+            this.panel2.Controls.Add(this.Add_Btn);
+            this.panel2.Controls.Add(this.Del_Btn);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.textBox6);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.DocAdd_TBox);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.DocPhone_TBox);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.DocName_TBox);
+            this.panel2.Controls.Add(this.DocBirth_DOB);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -378,11 +378,11 @@
             this.panel2.Size = new System.Drawing.Size(1264, 761);
             this.panel2.TabIndex = 5;
             // 
-            // comboBox2
+            // DocSpec_CBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.DocSpec_CBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocSpec_CBox.FormattingEnabled = true;
+            this.DocSpec_CBox.Items.AddRange(new object[] {
             "Internal Medicine",
             "General Surgery",
             "Pediatrics",
@@ -390,11 +390,74 @@
             "Ophthalmology",
             "Dermatology",
             "Orthopedics"});
-            this.comboBox2.Location = new System.Drawing.Point(560, 134);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 25);
-            this.comboBox2.TabIndex = 26;
-            this.comboBox2.Text = "Specialty";
+            this.DocSpec_CBox.Location = new System.Drawing.Point(608, 132);
+            this.DocSpec_CBox.Name = "DocSpec_CBox";
+            this.DocSpec_CBox.Size = new System.Drawing.Size(147, 25);
+            this.DocSpec_CBox.TabIndex = 26;
+            this.DocSpec_CBox.Text = "Specialty";
+            // 
+            // docGridView1
+            // 
+            this.docGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.docGridView1.Location = new System.Drawing.Point(219, 406);
+            this.docGridView1.Name = "docGridView1";
+            this.docGridView1.Size = new System.Drawing.Size(1033, 192);
+            this.docGridView1.TabIndex = 27;
+            this.docGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.docGridView1_CellContentClick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.DocGen2);
+            this.groupBox1.Controls.Add(this.DocGen1);
+            this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.groupBox1.Location = new System.Drawing.Point(483, 113);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(119, 45);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Gender";
+            // 
+            // DocGen1
+            // 
+            this.DocGen1.AutoSize = true;
+            this.DocGen1.ForeColor = System.Drawing.Color.Black;
+            this.DocGen1.Location = new System.Drawing.Point(3, 16);
+            this.DocGen1.Name = "DocGen1";
+            this.DocGen1.Size = new System.Drawing.Size(48, 17);
+            this.DocGen1.TabIndex = 0;
+            this.DocGen1.TabStop = true;
+            this.DocGen1.Text = "Male";
+            this.DocGen1.UseVisualStyleBackColor = true;
+            // 
+            // DocGen2
+            // 
+            this.DocGen2.AutoSize = true;
+            this.DocGen2.ForeColor = System.Drawing.Color.Black;
+            this.DocGen2.Location = new System.Drawing.Point(57, 16);
+            this.DocGen2.Name = "DocGen2";
+            this.DocGen2.Size = new System.Drawing.Size(59, 17);
+            this.DocGen2.TabIndex = 1;
+            this.DocGen2.TabStop = true;
+            this.DocGen2.Text = "Female";
+            this.DocGen2.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label10.Location = new System.Drawing.Point(556, 161);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(87, 21);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Experience:";
+            // 
+            // DocExp_TBox
+            // 
+            this.DocExp_TBox.Location = new System.Drawing.Point(560, 185);
+            this.DocExp_TBox.Name = "DocExp_TBox";
+            this.DocExp_TBox.Size = new System.Drawing.Size(195, 20);
+            this.DocExp_TBox.TabIndex = 29;
             // 
             // Doctors
             // 
@@ -418,25 +481,27 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.docGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Edit_Btn;
+        private System.Windows.Forms.Button Add_Btn;
+        private System.Windows.Forms.Button Del_Btn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox DocAdd_TBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DocPhone_TBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox DocName_TBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -450,8 +515,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DocBirth_DOB;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox DocSpec_CBox;
+        private System.Windows.Forms.DataGridView docGridView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton DocGen2;
+        private System.Windows.Forms.RadioButton DocGen1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox DocExp_TBox;
     }
 }
