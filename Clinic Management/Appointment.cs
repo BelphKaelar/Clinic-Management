@@ -16,5 +16,40 @@ namespace Clinic_Management
         {
             InitializeComponent();
         }
+
+        private void Pa_Lb_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Doc_Lb_Click(object sender, EventArgs e)
+        {
+            Doctors obj = new Doctors();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Presc_Lb_Click(object sender, EventArgs e)
+        {
+            Prescriptions obj = new Prescriptions();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Appoint_Lb_Click(object sender, EventArgs e)
+        {
+            Appointment obj = new Appointment();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Homes obj = new Homes();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

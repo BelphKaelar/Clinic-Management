@@ -30,36 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescriptions));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Appoint_Lb = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Presc_Lb = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Doc_Lb = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Pa_Lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Med_Tbox = new System.Windows.Forms.TextBox();
+            this.PrescGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Presc = new System.Windows.Forms.RichTextBox();
+            this.PaID_Cbox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.PrintBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.PaName_Tbox = new System.Windows.Forms.TextBox();
+            this.DocID_Cbox = new System.Windows.Forms.ComboBox();
+            this.DocName_Tbox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -68,23 +66,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PrescGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.Appoint_Lb);
             this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.Presc_Lb);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Doc_Lb);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Pa_Lb);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -92,16 +91,17 @@
             this.panel1.Size = new System.Drawing.Size(200, 761);
             this.panel1.TabIndex = 2;
             // 
-            // label4
+            // Appoint_Lb
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(57, 329);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 28);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Appointment";
+            this.Appoint_Lb.AutoSize = true;
+            this.Appoint_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appoint_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Appoint_Lb.Location = new System.Drawing.Point(57, 329);
+            this.Appoint_Lb.Name = "Appoint_Lb";
+            this.Appoint_Lb.Size = new System.Drawing.Size(137, 28);
+            this.Appoint_Lb.TabIndex = 24;
+            this.Appoint_Lb.Text = "Appointment";
+            this.Appoint_Lb.Click += new System.EventHandler(this.Appoint_Lb_Click);
             // 
             // pictureBox6
             // 
@@ -113,16 +113,17 @@
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
             // 
-            // label3
+            // Presc_Lb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(57, 278);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 28);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Lab";
+            this.Presc_Lb.AutoSize = true;
+            this.Presc_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Presc_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Presc_Lb.Location = new System.Drawing.Point(57, 278);
+            this.Presc_Lb.Name = "Presc_Lb";
+            this.Presc_Lb.Size = new System.Drawing.Size(135, 28);
+            this.Presc_Lb.TabIndex = 22;
+            this.Presc_Lb.Text = "Prescriptions";
+            this.Presc_Lb.Click += new System.EventHandler(this.Presc_Lb_Click);
             // 
             // pictureBox4
             // 
@@ -144,16 +145,17 @@
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
+            // Doc_Lb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(57, 227);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 28);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Doctors";
+            this.Doc_Lb.AutoSize = true;
+            this.Doc_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doc_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Doc_Lb.Location = new System.Drawing.Point(57, 227);
+            this.Doc_Lb.Name = "Doc_Lb";
+            this.Doc_Lb.Size = new System.Drawing.Size(86, 28);
+            this.Doc_Lb.TabIndex = 19;
+            this.Doc_Lb.Text = "Doctors";
+            this.Doc_Lb.Click += new System.EventHandler(this.Doc_Lb_Click);
             // 
             // label5
             // 
@@ -186,16 +188,17 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
-            // label2
+            // Pa_Lb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(57, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 28);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Patients";
+            this.Pa_Lb.AutoSize = true;
+            this.Pa_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pa_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Pa_Lb.Location = new System.Drawing.Point(57, 176);
+            this.Pa_Lb.Name = "Pa_Lb";
+            this.Pa_Lb.Size = new System.Drawing.Size(89, 28);
+            this.Pa_Lb.TabIndex = 8;
+            this.Pa_Lb.Text = "Patients";
+            this.Pa_Lb.Click += new System.EventHandler(this.Pa_Lb_Click);
             // 
             // pictureBox2
             // 
@@ -206,33 +209,171 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.PrescGridView1);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.Presc);
+            this.panel2.Controls.Add(this.PaID_Cbox);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.PrintBtn);
+            this.panel2.Controls.Add(this.AddBtn);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.PaName_Tbox);
+            this.panel2.Controls.Add(this.DocID_Cbox);
+            this.panel2.Controls.Add(this.DocName_Tbox);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1264, 761);
             this.panel2.TabIndex = 3;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Med_Tbox);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.groupBox1.Location = new System.Drawing.Point(271, 185);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(386, 130);
+            this.groupBox1.TabIndex = 54;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Medication";
+            // 
+            // Med_Tbox
+            // 
+            this.Med_Tbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Med_Tbox.Location = new System.Drawing.Point(3, 22);
+            this.Med_Tbox.Multiline = true;
+            this.Med_Tbox.Name = "Med_Tbox";
+            this.Med_Tbox.Size = new System.Drawing.Size(380, 105);
+            this.Med_Tbox.TabIndex = 49;
+            // 
+            // PrescGridView1
+            // 
+            this.PrescGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PrescGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.PrescGridView1.Location = new System.Drawing.Point(220, 385);
+            this.PrescGridView1.Name = "PrescGridView1";
+            this.PrescGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PrescGridView1.Size = new System.Drawing.Size(1033, 211);
+            this.PrescGridView1.TabIndex = 53;
+            this.PrescGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrescGridView1_CellContentClick);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label10.Location = new System.Drawing.Point(910, 77);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(131, 21);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "PRESCRIPTIONS";
+            // 
+            // Presc
+            // 
+            this.Presc.Location = new System.Drawing.Point(761, 107);
+            this.Presc.Name = "Presc";
+            this.Presc.Size = new System.Drawing.Size(429, 258);
+            this.Presc.TabIndex = 51;
+            this.Presc.Text = "";
+            // 
+            // PaID_Cbox
+            // 
+            this.PaID_Cbox.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaID_Cbox.FormattingEnabled = true;
+            this.PaID_Cbox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.PaID_Cbox.Location = new System.Drawing.Point(301, 146);
+            this.PaID_Cbox.Name = "PaID_Cbox";
+            this.PaID_Cbox.Size = new System.Drawing.Size(81, 21);
+            this.PaID_Cbox.TabIndex = 45;
+            this.PaID_Cbox.Text = "Patient ID";
+            this.PaID_Cbox.SelectionChangeCommitted += new System.EventHandler(this.PaID_Cbox_SelectionChangeCommitted);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label6.Location = new System.Drawing.Point(384, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 21);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Doctor name:";
+            // 
+            // PrintBtn
+            // 
+            this.PrintBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.PrintBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintBtn.Location = new System.Drawing.Point(464, 324);
+            this.PrintBtn.Name = "PrintBtn";
+            this.PrintBtn.Size = new System.Drawing.Size(104, 44);
+            this.PrintBtn.TabIndex = 43;
+            this.PrintBtn.Text = "Print";
+            this.PrintBtn.UseVisualStyleBackColor = false;
+            this.PrintBtn.Click += new System.EventHandler(this.PrintBtn_Click);
+            // 
+            // AddBtn
+            // 
+            this.AddBtn.BackColor = System.Drawing.Color.Black;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddBtn.Location = new System.Drawing.Point(340, 324);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(104, 44);
+            this.AddBtn.TabIndex = 42;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label9.Location = new System.Drawing.Point(384, 124);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(103, 21);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Patient name:";
+            // 
+            // PaName_Tbox
+            // 
+            this.PaName_Tbox.Enabled = false;
+            this.PaName_Tbox.Location = new System.Drawing.Point(388, 147);
+            this.PaName_Tbox.Name = "PaName_Tbox";
+            this.PaName_Tbox.Size = new System.Drawing.Size(258, 20);
+            this.PaName_Tbox.TabIndex = 31;
+            // 
+            // DocID_Cbox
+            // 
+            this.DocID_Cbox.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocID_Cbox.FormattingEnabled = true;
+            this.DocID_Cbox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.DocID_Cbox.Location = new System.Drawing.Point(301, 100);
+            this.DocID_Cbox.Name = "DocID_Cbox";
+            this.DocID_Cbox.Size = new System.Drawing.Size(81, 21);
+            this.DocID_Cbox.TabIndex = 29;
+            this.DocID_Cbox.Text = "Doctor ID";
+            this.DocID_Cbox.SelectionChangeCommitted += new System.EventHandler(this.DocID_Cbox_SelectionChangeCommitted);
+            // 
+            // DocName_Tbox
+            // 
+            this.DocName_Tbox.Enabled = false;
+            this.DocName_Tbox.Location = new System.Drawing.Point(388, 101);
+            this.DocName_Tbox.Name = "DocName_Tbox";
+            this.DocName_Tbox.Size = new System.Drawing.Size(258, 20);
+            this.DocName_Tbox.TabIndex = 27;
             // 
             // pictureBox1
             // 
@@ -243,179 +384,22 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button3
+            // printPreviewDialog1
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(458, 420);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 44);
-            this.button3.TabIndex = 43;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
-            // button2
+            // printDocument1
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(205, 420);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 44);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(331, 420);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 44);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label9.Location = new System.Drawing.Point(289, 172);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 21);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "Patient name:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(293, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 20);
-            this.textBox1.TabIndex = 31;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(206, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(81, 21);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "Doctor ID";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(293, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 20);
-            this.textBox2.TabIndex = 27;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(289, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 21);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Doctor name:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox2.Location = new System.Drawing.Point(206, 194);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(81, 21);
-            this.comboBox2.TabIndex = 45;
-            this.comboBox2.Text = "Patient ID";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox3.Location = new System.Drawing.Point(206, 244);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(81, 21);
-            this.comboBox3.TabIndex = 48;
-            this.comboBox3.Text = "Doctor ID";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(289, 222);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 21);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "Contact number:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(293, 245);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(258, 20);
-            this.textBox3.TabIndex = 46;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(206, 304);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(345, 101);
-            this.textBox4.TabIndex = 49;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label8.Location = new System.Drawing.Point(206, 280);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 21);
-            this.label8.TabIndex = 50;
-            this.label8.Text = "Meds";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(632, 149);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(429, 258);
-            this.richTextBox1.TabIndex = 51;
-            this.richTextBox1.Text = "";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(793, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 21);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "PRESCRIPTIONS";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(511, 528);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 53;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Prescriptions
             // 
@@ -438,8 +422,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PrescGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -447,35 +433,33 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Appoint_Lb;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Presc_Lb;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Doc_Lb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Pa_Lb;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button PrintBtn;
+        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PaName_Tbox;
+        private System.Windows.Forms.ComboBox DocID_Cbox;
+        private System.Windows.Forms.TextBox DocName_Tbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.RichTextBox Presc;
+        private System.Windows.Forms.TextBox Med_Tbox;
+        private System.Windows.Forms.ComboBox PaID_Cbox;
+        private System.Windows.Forms.DataGridView PrescGridView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,69 @@ namespace Clinic_Management
         public Homes()
         {
             InitializeComponent();
+            if(Login.Role == "Doctor")
+            {
+                Pa_Lb.Enabled = true;
+                Doc_Lb.Enabled = false;
+                Presc_Lb.Enabled = true;
+                Appoint_Lb.Enabled = true;
+            }
+            CountPa();
+            CountDoc();
+        }
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ADMINS\Documents\ClinicDB.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void CountPa()
+        {
+            Con.Open();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select count(*) from PatientTb1", Con);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            TotalPa.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+
+        private void CountDoc()
+        {
+            Con.Open();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select count(*) from DoctorTb1", Con);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            TotalDoc.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Doc_Lb_Click(object sender, EventArgs e)
+        {
+            Doctors obj = new Doctors();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Presc_Lb_Click(object sender, EventArgs e)
+        {
+            Prescriptions obj = new Prescriptions();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Appoint_Lb_Click(object sender, EventArgs e)
+        {
+            Appointment obj = new Appointment();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

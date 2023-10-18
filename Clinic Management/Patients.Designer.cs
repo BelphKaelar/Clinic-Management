@@ -32,36 +32,36 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Appoint_Lb = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Presc_Lb = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Doc_Lb = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Pa_Lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.PaGridView1 = new System.Windows.Forms.DataGridView();
+            this.Edit_Btn = new System.Windows.Forms.Button();
+            this.Add_Btn = new System.Windows.Forms.Button();
+            this.Del_Btn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.PaNote_Tbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.PaDiagnosis_Tbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PaSymptoms_Tbox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PaAdd_Tbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PaPhone_Tbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PaGen_Cbox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.PaName_Tbox = new System.Windows.Forms.TextBox();
+            this.PaBirth_DOB = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -70,8 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PaGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,14 +79,14 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.Appoint_Lb);
             this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.Presc_Lb);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Doc_Lb);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Pa_Lb);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -115,16 +115,17 @@
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
             // 
-            // label4
+            // Appoint_Lb
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(57, 329);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 28);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Appointment";
+            this.Appoint_Lb.AutoSize = true;
+            this.Appoint_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appoint_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Appoint_Lb.Location = new System.Drawing.Point(57, 329);
+            this.Appoint_Lb.Name = "Appoint_Lb";
+            this.Appoint_Lb.Size = new System.Drawing.Size(137, 28);
+            this.Appoint_Lb.TabIndex = 16;
+            this.Appoint_Lb.Text = "Appointment";
+            this.Appoint_Lb.Click += new System.EventHandler(this.Appoint_Lb_Click);
             // 
             // pictureBox6
             // 
@@ -136,16 +137,17 @@
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
             // 
-            // label3
+            // Presc_Lb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(57, 278);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 28);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Lab";
+            this.Presc_Lb.AutoSize = true;
+            this.Presc_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Presc_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Presc_Lb.Location = new System.Drawing.Point(57, 278);
+            this.Presc_Lb.Name = "Presc_Lb";
+            this.Presc_Lb.Size = new System.Drawing.Size(135, 28);
+            this.Presc_Lb.TabIndex = 14;
+            this.Presc_Lb.Text = "Prescriptions";
+            this.Presc_Lb.Click += new System.EventHandler(this.Presc_Lb_Click);
             // 
             // pictureBox4
             // 
@@ -167,16 +169,17 @@
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
+            // Doc_Lb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(57, 227);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 28);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Doctors";
+            this.Doc_Lb.AutoSize = true;
+            this.Doc_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doc_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Doc_Lb.Location = new System.Drawing.Point(57, 227);
+            this.Doc_Lb.Name = "Doc_Lb";
+            this.Doc_Lb.Size = new System.Drawing.Size(86, 28);
+            this.Doc_Lb.TabIndex = 10;
+            this.Doc_Lb.Text = "Doctors";
+            this.Doc_Lb.Click += new System.EventHandler(this.Doc_Lb_Click);
             // 
             // pictureBox3
             // 
@@ -188,16 +191,17 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
-            // label2
+            // Pa_Lb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(57, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 28);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Patients";
+            this.Pa_Lb.AutoSize = true;
+            this.Pa_Lb.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pa_Lb.ForeColor = System.Drawing.Color.Black;
+            this.Pa_Lb.Location = new System.Drawing.Point(57, 176);
+            this.Pa_Lb.Name = "Pa_Lb";
+            this.Pa_Lb.Size = new System.Drawing.Size(89, 28);
+            this.Pa_Lb.TabIndex = 8;
+            this.Pa_Lb.Text = "Patients";
+            this.Pa_Lb.Click += new System.EventHandler(this.Pa_Lb_Click);
             // 
             // pictureBox2
             // 
@@ -208,29 +212,30 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.PaGridView1);
+            this.panel2.Controls.Add(this.Edit_Btn);
+            this.panel2.Controls.Add(this.Add_Btn);
+            this.panel2.Controls.Add(this.Del_Btn);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.PaNote_Tbox);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.PaDiagnosis_Tbox);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.PaSymptoms_Tbox);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.PaAdd_Tbox);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.PaPhone_Tbox);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.PaGen_Cbox);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.PaName_Tbox);
+            this.panel2.Controls.Add(this.PaBirth_DOB);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -238,77 +243,91 @@
             this.panel2.Size = new System.Drawing.Size(1264, 761);
             this.panel2.TabIndex = 3;
             // 
-            // button3
+            // PaGridView1
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(670, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 44);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.PaGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PaGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.PaGridView1.Location = new System.Drawing.Point(219, 397);
+            this.PaGridView1.Name = "PaGridView1";
+            this.PaGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PaGridView1.Size = new System.Drawing.Size(1033, 298);
+            this.PaGridView1.TabIndex = 30;
+            this.PaGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PaGridView1_CellContentClick);
             // 
-            // button2
+            // Edit_Btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(417, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 44);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Edit_Btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Edit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edit_Btn.Location = new System.Drawing.Point(785, 324);
+            this.Edit_Btn.Name = "Edit_Btn";
+            this.Edit_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Edit_Btn.TabIndex = 29;
+            this.Edit_Btn.Text = "Edit";
+            this.Edit_Btn.UseVisualStyleBackColor = false;
+            this.Edit_Btn.Click += new System.EventHandler(this.Edit_Btn_Click);
             // 
-            // button1
+            // Add_Btn
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(543, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Add_Btn.BackColor = System.Drawing.Color.Black;
+            this.Add_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Add_Btn.Location = new System.Drawing.Point(532, 324);
+            this.Add_Btn.Name = "Add_Btn";
+            this.Add_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Add_Btn.TabIndex = 28;
+            this.Add_Btn.Text = "Add";
+            this.Add_Btn.UseVisualStyleBackColor = false;
+            this.Add_Btn.Click += new System.EventHandler(this.Add_Btn_Click);
+            // 
+            // Del_Btn
+            // 
+            this.Del_Btn.BackColor = System.Drawing.Color.IndianRed;
+            this.Del_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Del_Btn.Location = new System.Drawing.Point(658, 324);
+            this.Del_Btn.Name = "Del_Btn";
+            this.Del_Btn.Size = new System.Drawing.Size(104, 44);
+            this.Del_Btn.TabIndex = 27;
+            this.Del_Btn.Text = "Delete";
+            this.Del_Btn.UseVisualStyleBackColor = false;
+            this.Del_Btn.Click += new System.EventHandler(this.Del_Btn_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label12.Location = new System.Drawing.Point(556, 208);
+            this.label12.Location = new System.Drawing.Point(781, 212);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 21);
             this.label12.TabIndex = 22;
             this.label12.Text = "Note:";
             // 
-            // textBox6
+            // PaNote_Tbox
             // 
-            this.textBox6.Location = new System.Drawing.Point(560, 232);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(307, 68);
-            this.textBox6.TabIndex = 21;
+            this.PaNote_Tbox.Location = new System.Drawing.Point(785, 236);
+            this.PaNote_Tbox.Multiline = true;
+            this.PaNote_Tbox.Name = "PaNote_Tbox";
+            this.PaNote_Tbox.Size = new System.Drawing.Size(307, 68);
+            this.PaNote_Tbox.TabIndex = 21;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label11.Location = new System.Drawing.Point(215, 208);
+            this.label11.Location = new System.Drawing.Point(440, 212);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 21);
             this.label11.TabIndex = 20;
             this.label11.Text = "Diagnosis";
             // 
-            // textBox5
+            // PaDiagnosis_Tbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(219, 232);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(335, 68);
-            this.textBox5.TabIndex = 19;
+            this.PaDiagnosis_Tbox.Location = new System.Drawing.Point(444, 236);
+            this.PaDiagnosis_Tbox.Multiline = true;
+            this.PaDiagnosis_Tbox.Name = "PaDiagnosis_Tbox";
+            this.PaDiagnosis_Tbox.Size = new System.Drawing.Size(335, 68);
+            this.PaDiagnosis_Tbox.TabIndex = 19;
             // 
             // label10
             // 
@@ -321,13 +340,13 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Symptoms:";
             // 
-            // textBox4
+            // PaSymptoms_Tbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(873, 137);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(379, 68);
-            this.textBox4.TabIndex = 17;
+            this.PaSymptoms_Tbox.Location = new System.Drawing.Point(873, 137);
+            this.PaSymptoms_Tbox.Multiline = true;
+            this.PaSymptoms_Tbox.Name = "PaSymptoms_Tbox";
+            this.PaSymptoms_Tbox.Size = new System.Drawing.Size(379, 68);
+            this.PaSymptoms_Tbox.TabIndex = 17;
             // 
             // label8
             // 
@@ -340,13 +359,13 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Address:";
             // 
-            // textBox3
+            // PaAdd_Tbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(560, 137);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(307, 68);
-            this.textBox3.TabIndex = 15;
+            this.PaAdd_Tbox.Location = new System.Drawing.Point(560, 137);
+            this.PaAdd_Tbox.Multiline = true;
+            this.PaAdd_Tbox.Name = "PaAdd_Tbox";
+            this.PaAdd_Tbox.Size = new System.Drawing.Size(307, 68);
+            this.PaAdd_Tbox.TabIndex = 15;
             // 
             // label9
             // 
@@ -359,12 +378,12 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Contact number:";
             // 
-            // textBox1
+            // PaPhone_Tbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 12;
+            this.PaPhone_Tbox.Location = new System.Drawing.Point(219, 185);
+            this.PaPhone_Tbox.Name = "PaPhone_Tbox";
+            this.PaPhone_Tbox.Size = new System.Drawing.Size(200, 20);
+            this.PaPhone_Tbox.TabIndex = 12;
             // 
             // label7
             // 
@@ -377,18 +396,18 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Date of Birth:";
             // 
-            // comboBox1
+            // PaGen_Cbox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PaGen_Cbox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaGen_Cbox.FormattingEnabled = true;
+            this.PaGen_Cbox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(483, 134);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(71, 25);
-            this.comboBox1.TabIndex = 10;
-            this.comboBox1.Text = "Gender";
+            this.PaGen_Cbox.Location = new System.Drawing.Point(483, 134);
+            this.PaGen_Cbox.Name = "PaGen_Cbox";
+            this.PaGen_Cbox.Size = new System.Drawing.Size(71, 25);
+            this.PaGen_Cbox.TabIndex = 10;
+            this.PaGen_Cbox.Text = "Gender";
             // 
             // label6
             // 
@@ -401,19 +420,19 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Patient name:";
             // 
-            // textBox2
+            // PaName_Tbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(219, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 20);
-            this.textBox2.TabIndex = 8;
+            this.PaName_Tbox.Location = new System.Drawing.Point(219, 137);
+            this.PaName_Tbox.Name = "PaName_Tbox";
+            this.PaName_Tbox.Size = new System.Drawing.Size(258, 20);
+            this.PaName_Tbox.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // PaBirth_DOB
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 185);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.PaBirth_DOB.Location = new System.Drawing.Point(425, 185);
+            this.PaBirth_DOB.Name = "PaBirth_DOB";
+            this.PaBirth_DOB.Size = new System.Drawing.Size(129, 20);
+            this.PaBirth_DOB.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -424,14 +443,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(475, 550);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 26;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Patients
             // 
@@ -454,8 +466,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PaGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -465,35 +477,35 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Appoint_Lb;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Presc_Lb;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Doc_Lb;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Pa_Lb;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker PaBirth_DOB;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox PaName_Tbox;
+        private System.Windows.Forms.ComboBox PaGen_Cbox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PaPhone_Tbox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PaAdd_Tbox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PaSymptoms_Tbox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox PaDiagnosis_Tbox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox PaNote_Tbox;
+        private System.Windows.Forms.Button Edit_Btn;
+        private System.Windows.Forms.Button Add_Btn;
+        private System.Windows.Forms.Button Del_Btn;
+        private System.Windows.Forms.DataGridView PaGridView1;
     }
 }
