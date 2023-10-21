@@ -176,5 +176,40 @@ namespace Clinic_Management
                 catch (Exception Ex) { MessageBox.Show(Ex.Message); }
             }
         }
+
+        private void Pa_Lb_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Doc_Lb_Click(object sender, EventArgs e)
+        {
+            Doctors obj = new Doctors();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Presc_Lb_Click(object sender, EventArgs e)
+        {
+            Prescriptions obj = new Prescriptions();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Appoint_Lb_Click(object sender, EventArgs e)
+        {
+            Appointment obj = new Appointment();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

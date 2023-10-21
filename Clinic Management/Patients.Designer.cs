@@ -62,6 +62,7 @@
             this.PaName_Tbox = new System.Windows.Forms.TextBox();
             this.PaBirth_DOB = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -77,6 +78,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.Appoint_Lb);
@@ -91,7 +93,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 761);
+            this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 2;
             // 
             // label5
@@ -99,16 +101,17 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(69, 721);
+            this.label5.Location = new System.Drawing.Point(73, 541);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "LOGOUT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(12, 704);
+            this.pictureBox7.Location = new System.Drawing.Point(16, 524);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(51, 45);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,17 +243,17 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1264, 761);
+            this.panel2.Size = new System.Drawing.Size(1097, 590);
             this.panel2.TabIndex = 3;
             // 
             // PaGridView1
             // 
             this.PaGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PaGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PaGridView1.Location = new System.Drawing.Point(219, 397);
+            this.PaGridView1.Location = new System.Drawing.Point(206, 329);
             this.PaGridView1.Name = "PaGridView1";
             this.PaGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PaGridView1.Size = new System.Drawing.Size(1033, 298);
+            this.PaGridView1.Size = new System.Drawing.Size(879, 181);
             this.PaGridView1.TabIndex = 30;
             this.PaGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PaGridView1_CellContentClick);
             // 
@@ -258,7 +261,7 @@
             // 
             this.Edit_Btn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.Edit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_Btn.Location = new System.Drawing.Point(785, 324);
+            this.Edit_Btn.Location = new System.Drawing.Point(668, 277);
             this.Edit_Btn.Name = "Edit_Btn";
             this.Edit_Btn.Size = new System.Drawing.Size(104, 44);
             this.Edit_Btn.TabIndex = 29;
@@ -271,7 +274,7 @@
             this.Add_Btn.BackColor = System.Drawing.Color.Black;
             this.Add_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_Btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Add_Btn.Location = new System.Drawing.Point(532, 324);
+            this.Add_Btn.Location = new System.Drawing.Point(415, 277);
             this.Add_Btn.Name = "Add_Btn";
             this.Add_Btn.Size = new System.Drawing.Size(104, 44);
             this.Add_Btn.TabIndex = 28;
@@ -283,7 +286,7 @@
             // 
             this.Del_Btn.BackColor = System.Drawing.Color.IndianRed;
             this.Del_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Del_Btn.Location = new System.Drawing.Point(658, 324);
+            this.Del_Btn.Location = new System.Drawing.Point(541, 277);
             this.Del_Btn.Name = "Del_Btn";
             this.Del_Btn.Size = new System.Drawing.Size(104, 44);
             this.Del_Btn.TabIndex = 27;
@@ -296,7 +299,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label12.Location = new System.Drawing.Point(781, 212);
+            this.label12.Location = new System.Drawing.Point(550, 167);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 21);
             this.label12.TabIndex = 22;
@@ -304,7 +307,7 @@
             // 
             // PaNote_Tbox
             // 
-            this.PaNote_Tbox.Location = new System.Drawing.Point(785, 236);
+            this.PaNote_Tbox.Location = new System.Drawing.Point(554, 191);
             this.PaNote_Tbox.Multiline = true;
             this.PaNote_Tbox.Name = "PaNote_Tbox";
             this.PaNote_Tbox.Size = new System.Drawing.Size(307, 68);
@@ -315,7 +318,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label11.Location = new System.Drawing.Point(440, 212);
+            this.label11.Location = new System.Drawing.Point(209, 167);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 21);
             this.label11.TabIndex = 20;
@@ -323,7 +326,7 @@
             // 
             // PaDiagnosis_Tbox
             // 
-            this.PaDiagnosis_Tbox.Location = new System.Drawing.Point(444, 236);
+            this.PaDiagnosis_Tbox.Location = new System.Drawing.Point(213, 191);
             this.PaDiagnosis_Tbox.Multiline = true;
             this.PaDiagnosis_Tbox.Name = "PaDiagnosis_Tbox";
             this.PaDiagnosis_Tbox.Size = new System.Drawing.Size(335, 68);
@@ -334,7 +337,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(869, 113);
+            this.label10.Location = new System.Drawing.Point(863, 66);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 21);
             this.label10.TabIndex = 18;
@@ -342,10 +345,10 @@
             // 
             // PaSymptoms_Tbox
             // 
-            this.PaSymptoms_Tbox.Location = new System.Drawing.Point(873, 137);
+            this.PaSymptoms_Tbox.Location = new System.Drawing.Point(867, 90);
             this.PaSymptoms_Tbox.Multiline = true;
             this.PaSymptoms_Tbox.Name = "PaSymptoms_Tbox";
-            this.PaSymptoms_Tbox.Size = new System.Drawing.Size(379, 68);
+            this.PaSymptoms_Tbox.Size = new System.Drawing.Size(212, 169);
             this.PaSymptoms_Tbox.TabIndex = 17;
             // 
             // label8
@@ -353,7 +356,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label8.Location = new System.Drawing.Point(556, 113);
+            this.label8.Location = new System.Drawing.Point(550, 66);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 21);
             this.label8.TabIndex = 16;
@@ -361,7 +364,7 @@
             // 
             // PaAdd_Tbox
             // 
-            this.PaAdd_Tbox.Location = new System.Drawing.Point(560, 137);
+            this.PaAdd_Tbox.Location = new System.Drawing.Point(554, 90);
             this.PaAdd_Tbox.Multiline = true;
             this.PaAdd_Tbox.Name = "PaAdd_Tbox";
             this.PaAdd_Tbox.Size = new System.Drawing.Size(307, 68);
@@ -372,7 +375,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label9.Location = new System.Drawing.Point(215, 161);
+            this.label9.Location = new System.Drawing.Point(209, 114);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 21);
             this.label9.TabIndex = 14;
@@ -380,7 +383,7 @@
             // 
             // PaPhone_Tbox
             // 
-            this.PaPhone_Tbox.Location = new System.Drawing.Point(219, 185);
+            this.PaPhone_Tbox.Location = new System.Drawing.Point(213, 138);
             this.PaPhone_Tbox.Name = "PaPhone_Tbox";
             this.PaPhone_Tbox.Size = new System.Drawing.Size(200, 20);
             this.PaPhone_Tbox.TabIndex = 12;
@@ -390,7 +393,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(421, 161);
+            this.label7.Location = new System.Drawing.Point(415, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 21);
             this.label7.TabIndex = 11;
@@ -403,7 +406,7 @@
             this.PaGen_Cbox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.PaGen_Cbox.Location = new System.Drawing.Point(483, 134);
+            this.PaGen_Cbox.Location = new System.Drawing.Point(477, 87);
             this.PaGen_Cbox.Name = "PaGen_Cbox";
             this.PaGen_Cbox.Size = new System.Drawing.Size(71, 25);
             this.PaGen_Cbox.TabIndex = 10;
@@ -414,7 +417,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(215, 111);
+            this.label6.Location = new System.Drawing.Point(209, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 21);
             this.label6.TabIndex = 9;
@@ -422,14 +425,15 @@
             // 
             // PaName_Tbox
             // 
-            this.PaName_Tbox.Location = new System.Drawing.Point(219, 137);
+            this.PaName_Tbox.Location = new System.Drawing.Point(213, 90);
             this.PaName_Tbox.Name = "PaName_Tbox";
             this.PaName_Tbox.Size = new System.Drawing.Size(258, 20);
             this.PaName_Tbox.TabIndex = 8;
             // 
             // PaBirth_DOB
             // 
-            this.PaBirth_DOB.Location = new System.Drawing.Point(425, 185);
+            this.PaBirth_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.PaBirth_DOB.Location = new System.Drawing.Point(419, 138);
             this.PaBirth_DOB.Name = "PaBirth_DOB";
             this.PaBirth_DOB.Size = new System.Drawing.Size(129, 20);
             this.PaBirth_DOB.TabIndex = 4;
@@ -437,7 +441,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1046, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -445,11 +449,22 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(47, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 28);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Clinic MS";
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1097, 590);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -507,5 +522,6 @@
         private System.Windows.Forms.Button Add_Btn;
         private System.Windows.Forms.Button Del_Btn;
         private System.Windows.Forms.DataGridView PaGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

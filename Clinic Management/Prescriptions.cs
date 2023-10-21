@@ -16,6 +16,13 @@ namespace Clinic_Management
         public Prescriptions()
         {
             InitializeComponent();
+            if (Login.Role == "Doctor")
+            {
+                Pa_Lb.Enabled = true;
+                Doc_Lb.Enabled = false;
+                Presc_Lb.Enabled = true;
+                Appoint_Lb.Enabled = true;
+            }
             DisplayPrescriptions();
             PrescGridView1.ClearSelection();
             GetDocID(); GetPaID();
@@ -185,6 +192,13 @@ namespace Clinic_Management
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Homes obj = new Homes();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
             obj.Show();
             this.Hide();
         }

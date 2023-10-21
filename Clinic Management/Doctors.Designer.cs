@@ -63,6 +63,7 @@
             this.DocGen1 = new System.Windows.Forms.RadioButton();
             this.docGridView1 = new System.Windows.Forms.DataGridView();
             this.DocSpec_CBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -80,7 +81,7 @@
             // 
             this.Edit_Btn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.Edit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_Btn.Location = new System.Drawing.Point(619, 324);
+            this.Edit_Btn.Location = new System.Drawing.Point(708, 324);
             this.Edit_Btn.Name = "Edit_Btn";
             this.Edit_Btn.Size = new System.Drawing.Size(104, 44);
             this.Edit_Btn.TabIndex = 25;
@@ -93,7 +94,7 @@
             this.Add_Btn.BackColor = System.Drawing.Color.Black;
             this.Add_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_Btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Add_Btn.Location = new System.Drawing.Point(366, 324);
+            this.Add_Btn.Location = new System.Drawing.Point(455, 324);
             this.Add_Btn.Name = "Add_Btn";
             this.Add_Btn.Size = new System.Drawing.Size(104, 44);
             this.Add_Btn.TabIndex = 24;
@@ -105,7 +106,7 @@
             // 
             this.Del_Btn.BackColor = System.Drawing.Color.IndianRed;
             this.Del_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Del_Btn.Location = new System.Drawing.Point(492, 324);
+            this.Del_Btn.Location = new System.Drawing.Point(581, 324);
             this.Del_Btn.Name = "Del_Btn";
             this.Del_Btn.Size = new System.Drawing.Size(104, 44);
             this.Del_Btn.TabIndex = 23;
@@ -118,7 +119,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label12.Location = new System.Drawing.Point(528, 208);
+            this.label12.Location = new System.Drawing.Point(725, 210);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 21);
             this.label12.TabIndex = 22;
@@ -126,7 +127,7 @@
             // 
             // DocNote_Tbox
             // 
-            this.DocNote_Tbox.Location = new System.Drawing.Point(532, 232);
+            this.DocNote_Tbox.Location = new System.Drawing.Point(729, 232);
             this.DocNote_Tbox.Multiline = true;
             this.DocNote_Tbox.Name = "DocNote_Tbox";
             this.DocNote_Tbox.Size = new System.Drawing.Size(307, 68);
@@ -166,7 +167,7 @@
             // 
             this.DocPhone_TBox.Location = new System.Drawing.Point(219, 185);
             this.DocPhone_TBox.Name = "DocPhone_TBox";
-            this.DocPhone_TBox.Size = new System.Drawing.Size(200, 20);
+            this.DocPhone_TBox.Size = new System.Drawing.Size(302, 20);
             this.DocPhone_TBox.TabIndex = 12;
             // 
             // label7
@@ -174,7 +175,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(421, 161);
+            this.label7.Location = new System.Drawing.Point(532, 113);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 21);
             this.label7.TabIndex = 11;
@@ -195,13 +196,13 @@
             // 
             this.DocName_TBox.Location = new System.Drawing.Point(219, 137);
             this.DocName_TBox.Name = "DocName_TBox";
-            this.DocName_TBox.Size = new System.Drawing.Size(258, 20);
+            this.DocName_TBox.Size = new System.Drawing.Size(302, 20);
             this.DocName_TBox.TabIndex = 8;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1046, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -214,16 +215,17 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(69, 721);
+            this.label5.Location = new System.Drawing.Point(73, 541);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "LOGOUT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(12, 704);
+            this.pictureBox7.Location = new System.Drawing.Point(16, 524);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(51, 45);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,6 +242,7 @@
             this.Appoint_Lb.Size = new System.Drawing.Size(137, 28);
             this.Appoint_Lb.TabIndex = 16;
             this.Appoint_Lb.Text = "Appointment";
+            this.Appoint_Lb.Click += new System.EventHandler(this.Appoint_Lb_Click);
             // 
             // pictureBox6
             // 
@@ -261,6 +264,7 @@
             this.Presc_Lb.Size = new System.Drawing.Size(135, 28);
             this.Presc_Lb.TabIndex = 14;
             this.Presc_Lb.Text = "Prescriptions";
+            this.Presc_Lb.Click += new System.EventHandler(this.Presc_Lb_Click);
             // 
             // pictureBox4
             // 
@@ -292,6 +296,7 @@
             this.Doc_Lb.Size = new System.Drawing.Size(86, 28);
             this.Doc_Lb.TabIndex = 10;
             this.Doc_Lb.Text = "Doctors";
+            this.Doc_Lb.Click += new System.EventHandler(this.Doc_Lb_Click);
             // 
             // pictureBox3
             // 
@@ -313,6 +318,7 @@
             this.Pa_Lb.Size = new System.Drawing.Size(89, 28);
             this.Pa_Lb.TabIndex = 8;
             this.Pa_Lb.Text = "Patients";
+            this.Pa_Lb.Click += new System.EventHandler(this.Pa_Lb_Click);
             // 
             // pictureBox2
             // 
@@ -327,6 +333,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.Appoint_Lb);
@@ -341,12 +348,12 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 761);
+            this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 4;
             // 
             // DocBirth_DOB
             // 
-            this.DocBirth_DOB.Location = new System.Drawing.Point(425, 185);
+            this.DocBirth_DOB.Location = new System.Drawing.Point(536, 137);
             this.DocBirth_DOB.Name = "DocBirth_DOB";
             this.DocBirth_DOB.Size = new System.Drawing.Size(129, 20);
             this.DocBirth_DOB.TabIndex = 4;
@@ -376,7 +383,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1264, 761);
+            this.panel2.Size = new System.Drawing.Size(1097, 590);
             this.panel2.TabIndex = 5;
             // 
             // label10
@@ -384,7 +391,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(556, 161);
+            this.label10.Location = new System.Drawing.Point(725, 161);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 21);
             this.label10.TabIndex = 30;
@@ -392,7 +399,7 @@
             // 
             // DocExp_TBox
             // 
-            this.DocExp_TBox.Location = new System.Drawing.Point(560, 185);
+            this.DocExp_TBox.Location = new System.Drawing.Point(729, 185);
             this.DocExp_TBox.Name = "DocExp_TBox";
             this.DocExp_TBox.Size = new System.Drawing.Size(195, 20);
             this.DocExp_TBox.TabIndex = 29;
@@ -402,7 +409,7 @@
             this.groupBox1.Controls.Add(this.DocGen2);
             this.groupBox1.Controls.Add(this.DocGen1);
             this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(483, 113);
+            this.groupBox1.Location = new System.Drawing.Point(536, 164);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(119, 45);
             this.groupBox1.TabIndex = 28;
@@ -437,10 +444,10 @@
             // 
             this.docGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.docGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.docGridView1.Location = new System.Drawing.Point(219, 406);
+            this.docGridView1.Location = new System.Drawing.Point(206, 374);
             this.docGridView1.Name = "docGridView1";
             this.docGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.docGridView1.Size = new System.Drawing.Size(1033, 192);
+            this.docGridView1.Size = new System.Drawing.Size(879, 204);
             this.docGridView1.TabIndex = 27;
             this.docGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.docGridView1_CellClick);
             // 
@@ -456,17 +463,28 @@
             "Ophthalmology",
             "Dermatology",
             "Orthopedics"});
-            this.DocSpec_CBox.Location = new System.Drawing.Point(608, 132);
+            this.DocSpec_CBox.Location = new System.Drawing.Point(729, 124);
             this.DocSpec_CBox.Name = "DocSpec_CBox";
             this.DocSpec_CBox.Size = new System.Drawing.Size(147, 25);
             this.DocSpec_CBox.TabIndex = 26;
             this.DocSpec_CBox.Text = "Specialty";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(47, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 28);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Clinic MS";
+            // 
             // Doctors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1097, 590);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -527,5 +545,6 @@
         private System.Windows.Forms.RadioButton DocGen1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox DocExp_TBox;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -58,6 +58,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -74,6 +75,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Appoint_Lb);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.Presc_Lb);
@@ -88,7 +90,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 761);
+            this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 2;
             // 
             // Appoint_Lb
@@ -162,16 +164,17 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(69, 721);
+            this.label5.Location = new System.Drawing.Point(73, 541);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "LOGOUT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(12, 704);
+            this.pictureBox7.Location = new System.Drawing.Point(16, 524);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(51, 45);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +233,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1264, 761);
+            this.panel2.Size = new System.Drawing.Size(1097, 590);
             this.panel2.TabIndex = 3;
             // 
             // groupBox1
@@ -238,7 +241,7 @@
             this.groupBox1.Controls.Add(this.Med_Tbox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(271, 185);
+            this.groupBox1.Location = new System.Drawing.Point(232, 183);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(386, 130);
             this.groupBox1.TabIndex = 54;
@@ -258,10 +261,10 @@
             // 
             this.PrescGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PrescGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PrescGridView1.Location = new System.Drawing.Point(220, 385);
+            this.PrescGridView1.Location = new System.Drawing.Point(206, 372);
             this.PrescGridView1.Name = "PrescGridView1";
             this.PrescGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PrescGridView1.Size = new System.Drawing.Size(1033, 211);
+            this.PrescGridView1.Size = new System.Drawing.Size(879, 138);
             this.PrescGridView1.TabIndex = 53;
             this.PrescGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrescGridView1_CellContentClick);
             // 
@@ -270,7 +273,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label10.Location = new System.Drawing.Point(910, 77);
+            this.label10.Location = new System.Drawing.Point(812, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 21);
             this.label10.TabIndex = 52;
@@ -278,7 +281,7 @@
             // 
             // Presc
             // 
-            this.Presc.Location = new System.Drawing.Point(761, 107);
+            this.Presc.Location = new System.Drawing.Point(656, 101);
             this.Presc.Name = "Presc";
             this.Presc.Size = new System.Drawing.Size(429, 258);
             this.Presc.TabIndex = 51;
@@ -291,7 +294,7 @@
             this.PaID_Cbox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.PaID_Cbox.Location = new System.Drawing.Point(301, 146);
+            this.PaID_Cbox.Location = new System.Drawing.Point(262, 144);
             this.PaID_Cbox.Name = "PaID_Cbox";
             this.PaID_Cbox.Size = new System.Drawing.Size(81, 21);
             this.PaID_Cbox.TabIndex = 45;
@@ -303,7 +306,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(384, 77);
+            this.label6.Location = new System.Drawing.Point(345, 75);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 21);
             this.label6.TabIndex = 44;
@@ -313,7 +316,7 @@
             // 
             this.PrintBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.PrintBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintBtn.Location = new System.Drawing.Point(464, 324);
+            this.PrintBtn.Location = new System.Drawing.Point(425, 322);
             this.PrintBtn.Name = "PrintBtn";
             this.PrintBtn.Size = new System.Drawing.Size(104, 44);
             this.PrintBtn.TabIndex = 43;
@@ -326,7 +329,7 @@
             this.AddBtn.BackColor = System.Drawing.Color.Black;
             this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddBtn.Location = new System.Drawing.Point(340, 324);
+            this.AddBtn.Location = new System.Drawing.Point(301, 322);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(104, 44);
             this.AddBtn.TabIndex = 42;
@@ -339,7 +342,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label9.Location = new System.Drawing.Point(384, 124);
+            this.label9.Location = new System.Drawing.Point(345, 122);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 21);
             this.label9.TabIndex = 32;
@@ -348,7 +351,7 @@
             // PaName_Tbox
             // 
             this.PaName_Tbox.Enabled = false;
-            this.PaName_Tbox.Location = new System.Drawing.Point(388, 147);
+            this.PaName_Tbox.Location = new System.Drawing.Point(349, 145);
             this.PaName_Tbox.Name = "PaName_Tbox";
             this.PaName_Tbox.Size = new System.Drawing.Size(258, 20);
             this.PaName_Tbox.TabIndex = 31;
@@ -360,7 +363,7 @@
             this.DocID_Cbox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.DocID_Cbox.Location = new System.Drawing.Point(301, 100);
+            this.DocID_Cbox.Location = new System.Drawing.Point(262, 98);
             this.DocID_Cbox.Name = "DocID_Cbox";
             this.DocID_Cbox.Size = new System.Drawing.Size(81, 21);
             this.DocID_Cbox.TabIndex = 29;
@@ -370,7 +373,7 @@
             // DocName_Tbox
             // 
             this.DocName_Tbox.Enabled = false;
-            this.DocName_Tbox.Location = new System.Drawing.Point(388, 101);
+            this.DocName_Tbox.Location = new System.Drawing.Point(349, 99);
             this.DocName_Tbox.Name = "DocName_Tbox";
             this.DocName_Tbox.Size = new System.Drawing.Size(258, 20);
             this.DocName_Tbox.TabIndex = 27;
@@ -378,7 +381,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1213, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1046, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -401,11 +404,22 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(47, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 28);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Clinic MS";
+            // 
             // Prescriptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1097, 590);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -461,5 +475,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label1;
     }
 }

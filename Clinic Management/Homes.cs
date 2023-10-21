@@ -25,6 +25,7 @@ namespace Clinic_Management
             }
             CountPa();
             CountDoc();
+            timer1.Start();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ADMINS\Documents\ClinicDB.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -79,6 +80,18 @@ namespace Clinic_Management
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.label4.Text = DateTime.Now.ToString();
         }
     }
 }
