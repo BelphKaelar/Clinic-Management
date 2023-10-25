@@ -37,6 +37,7 @@ namespace Clinic_Management
             DocAdd_TBox.Text = "";
             DocExp_TBox.Text = "";
             DocName_TBox.Text = "";
+            DocGen_Cbox.SelectedIndex = 0;
             DocSpec_CBox.SelectedIndex = 0;
             DocPhone_TBox.Text = "";
             key = 0;
@@ -44,7 +45,7 @@ namespace Clinic_Management
         private void Add_Btn_Click(object sender, EventArgs e)
         {
             if(DocName_TBox.Text == "" || DocPhone_TBox.Text == "" || DocSpec_CBox.SelectedIndex == -1
-                || (DocGen1.Checked == false | DocGen2.Checked == false) || DocExp_TBox.Text == "" || DocAdd_TBox.Text == "")
+                || DocGen_Cbox.SelectedIndex == -1 || DocExp_TBox.Text == "" || DocAdd_TBox.Text == "")
             {
                 MessageBox.Show("Missing Information!");
             }
@@ -56,8 +57,7 @@ namespace Clinic_Management
                     SqlCommand cmd = new SqlCommand("insert into DoctorTb1(DocName, DocDOB, DocGen, DocSpec, DocExp, DocPhone, DocAdd)values(@DN,@DD,@DG,@DS,@DE,@DP,@DA)",Con);
                     cmd.Parameters.AddWithValue("@DN", DocName_TBox.Text);
                     cmd.Parameters.AddWithValue("@DD", DocBirth_DOB.Value.Date);
-                    if (DocGen1.Checked) { cmd.Parameters.AddWithValue("@DG", DocGen1.Checked.ToString()); }
-                    else { cmd.Parameters.AddWithValue("@DG", DocGen2.Checked.ToString()); }
+                    cmd.Parameters.AddWithValue("@DG", DocGen_Cbox.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@DS", DocSpec_CBox.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@DE", DocExp_TBox.Text);
                     cmd.Parameters.AddWithValue("@DP", DocPhone_TBox.Text);
@@ -87,17 +87,7 @@ namespace Clinic_Management
                 // Row is selected
                 DocName_TBox.Text = docGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 DocBirth_DOB.Text = docGridView1.SelectedRows[0].Cells[2].Value.ToString();
-
-                // Handle gender checkbox based on the value in the third cell
-                if (Convert.ToBoolean(docGridView1.SelectedRows[0].Cells[3].Value))
-                {
-                    DocGen1.Checked = true;
-                }
-                else
-                {
-                    DocGen2.Checked = true;
-                }
-
+                DocGen_Cbox.SelectedItem = docGridView1.SelectedRows[0].Cells[3].Value.ToString();
                 DocSpec_CBox.SelectedItem = docGridView1.SelectedRows[0].Cells[4].Value.ToString();
                 DocExp_TBox.Text = docGridView1.SelectedRows[0].Cells[5].Value.ToString();
                 DocPhone_TBox.Text = docGridView1.SelectedRows[0].Cells[6].Value.ToString();
@@ -113,19 +103,14 @@ namespace Clinic_Management
                     key = Convert.ToInt32(docGridView1.SelectedRows[0].Cells[0].Value.ToString());
                 }
             }
-            else
-            {
-                // No row selected
-                // Display a message
-                MessageBox.Show("Please select a row before you can access its information.");
-            }
+            else{MessageBox.Show("Please select a row before you can access its information.");}
         }
 
 
         private void Edit_Btn_Click(object sender, EventArgs e)
         {
             if (DocName_TBox.Text == "" || DocPhone_TBox.Text == "" || DocSpec_CBox.SelectedIndex == -1
-                || (DocGen1.Checked == false && DocGen2.Checked == false) || DocExp_TBox.Text == "" || DocAdd_TBox.Text == "")
+                || DocGen_Cbox.SelectedIndex == -1 || DocExp_TBox.Text == "" || DocAdd_TBox.Text == "")
             {
                 MessageBox.Show("Missing Information!");
             }
@@ -137,8 +122,7 @@ namespace Clinic_Management
                     SqlCommand cmd = new SqlCommand("Update DoctorTb1 set DocName=@DN, DocDOB=@DD, DocGen=@DG, DocSpec=@DS, DocExp=@DE, DocPhone=@DP, DocAdd=@DA where DocID=@DKey", Con);
                     cmd.Parameters.AddWithValue("@DN", DocName_TBox.Text);
                     cmd.Parameters.AddWithValue("@DD", DocBirth_DOB.Value.Date);
-                    if (DocGen1.Checked) { cmd.Parameters.AddWithValue("@DG", DocGen1.Checked.ToString()); }
-                    else { cmd.Parameters.AddWithValue("@DG", DocGen2.Checked.ToString()); }
+                    cmd.Parameters.AddWithValue("@DG", DocGen_Cbox.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@DS", DocSpec_CBox.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@DE", DocExp_TBox.Text);
                     cmd.Parameters.AddWithValue("@DP", DocPhone_TBox.Text);

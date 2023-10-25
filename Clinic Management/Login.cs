@@ -35,8 +35,8 @@ namespace Clinic_Management
                 if (User_Tbox.Text == "" || Pass_Tbox.Text == "") { MessageBox.Show("Your username or password is missing."); }
                 else if(User_Tbox.Text == "admin" ||  Pass_Tbox.Text == "123")
                 {
-                    Role = "Admin"; 
-                    Patients obj = new Patients();
+                    Role = "Admin";
+                    Homes obj = new Homes();
                     obj.Show();
                     this.Hide();
                 }
@@ -49,7 +49,7 @@ namespace Clinic_Management
                 else if(User_Tbox.Text=="doc"|| Pass_Tbox.Text=="123")
                 {
                     Role = "Doctor";
-                    Prescriptions obj = new Prescriptions();
+                    Homes obj = new Homes();
                     obj.Show();
                     this.Hide();
                 }

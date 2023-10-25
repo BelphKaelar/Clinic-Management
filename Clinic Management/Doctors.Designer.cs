@@ -54,16 +54,14 @@
             this.Pa_Lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.DocBirth_DOB = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.DocExp_TBox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DocGen2 = new System.Windows.Forms.RadioButton();
-            this.DocGen1 = new System.Windows.Forms.RadioButton();
             this.docGridView1 = new System.Windows.Forms.DataGridView();
             this.DocSpec_CBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DocGen_Cbox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -73,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -351,6 +348,17 @@
             this.panel1.Size = new System.Drawing.Size(200, 590);
             this.panel1.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(47, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 28);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Clinic MS";
+            // 
             // DocBirth_DOB
             // 
             this.DocBirth_DOB.Location = new System.Drawing.Point(536, 137);
@@ -361,9 +369,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.DocGen_Cbox);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.DocExp_TBox);
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.docGridView1);
             this.panel2.Controls.Add(this.DocSpec_CBox);
             this.panel2.Controls.Add(this.Edit_Btn);
@@ -404,42 +412,6 @@
             this.DocExp_TBox.Size = new System.Drawing.Size(195, 20);
             this.DocExp_TBox.TabIndex = 29;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.DocGen2);
-            this.groupBox1.Controls.Add(this.DocGen1);
-            this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(536, 164);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(119, 45);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gender";
-            // 
-            // DocGen2
-            // 
-            this.DocGen2.AutoSize = true;
-            this.DocGen2.ForeColor = System.Drawing.Color.Black;
-            this.DocGen2.Location = new System.Drawing.Point(57, 16);
-            this.DocGen2.Name = "DocGen2";
-            this.DocGen2.Size = new System.Drawing.Size(59, 17);
-            this.DocGen2.TabIndex = 1;
-            this.DocGen2.TabStop = true;
-            this.DocGen2.Text = "Female";
-            this.DocGen2.UseVisualStyleBackColor = true;
-            // 
-            // DocGen1
-            // 
-            this.DocGen1.AutoSize = true;
-            this.DocGen1.ForeColor = System.Drawing.Color.Black;
-            this.DocGen1.Location = new System.Drawing.Point(3, 16);
-            this.DocGen1.Name = "DocGen1";
-            this.DocGen1.Size = new System.Drawing.Size(48, 17);
-            this.DocGen1.TabIndex = 0;
-            this.DocGen1.TabStop = true;
-            this.DocGen1.Text = "Male";
-            this.DocGen1.UseVisualStyleBackColor = true;
-            // 
             // docGridView1
             // 
             this.docGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -469,16 +441,18 @@
             this.DocSpec_CBox.TabIndex = 26;
             this.DocSpec_CBox.Text = "Specialty";
             // 
-            // label1
+            // DocGen_Cbox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(47, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 28);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Clinic MS";
+            this.DocGen_Cbox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocGen_Cbox.FormattingEnabled = true;
+            this.DocGen_Cbox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.DocGen_Cbox.Location = new System.Drawing.Point(536, 179);
+            this.DocGen_Cbox.Name = "DocGen_Cbox";
+            this.DocGen_Cbox.Size = new System.Drawing.Size(71, 25);
+            this.DocGen_Cbox.TabIndex = 31;
+            this.DocGen_Cbox.Text = "Gender";
             // 
             // Doctors
             // 
@@ -502,8 +476,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -540,11 +512,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox DocSpec_CBox;
         private System.Windows.Forms.DataGridView docGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton DocGen2;
-        private System.Windows.Forms.RadioButton DocGen1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox DocExp_TBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox DocGen_Cbox;
     }
 }
