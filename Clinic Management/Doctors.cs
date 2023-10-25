@@ -78,13 +78,8 @@ namespace Clinic_Management
 
         private void docGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Get the row index of the clicked cell
-            int rowIndex = e.RowIndex;
-
-            // Check if the row is selected
-            if (rowIndex >= 0 && docGridView1.SelectedRows.Count > 0)
+            if (docGridView1.SelectedRows.Count > 0)
             {
-                // Row is selected
                 DocName_TBox.Text = docGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 DocBirth_DOB.Text = docGridView1.SelectedRows[0].Cells[2].Value.ToString();
                 DocGen_Cbox.SelectedItem = docGridView1.SelectedRows[0].Cells[3].Value.ToString();
@@ -92,16 +87,8 @@ namespace Clinic_Management
                 DocExp_TBox.Text = docGridView1.SelectedRows[0].Cells[5].Value.ToString();
                 DocPhone_TBox.Text = docGridView1.SelectedRows[0].Cells[6].Value.ToString();
                 DocAdd_TBox.Text = docGridView1.SelectedRows[0].Cells[7].Value.ToString();
-
-                // Set the key based on the value in the first cell
-                if (DocName_TBox.Text == "")
-                {
-                    key = 0;
-                }
-                else
-                {
-                    key = Convert.ToInt32(docGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                }
+                if (DocName_TBox.Text == ""){key = 0;}
+                else{key = Convert.ToInt32(docGridView1.SelectedRows[0].Cells[0].Value.ToString());}
             }
             else{MessageBox.Show("Please select a row before you can access its information.");}
         }
